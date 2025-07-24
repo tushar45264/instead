@@ -15,8 +15,11 @@ interface FieldAnnotation {
   invertCheckbox?: boolean;
   format?: "currency" | "ssn" | "date" | "uppercase";
 }
+type Props = {
+  schema: any; // You can type it better if needed
+};
 
-const FormRenderer: React.FC = (schema:any) => {
+const FormRenderer= ({ schema }: Props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const maxPage = Array.isArray(Data)
     ? Math.max(...schema.map((s: any) => s.page ?? 2), 2)
