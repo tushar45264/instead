@@ -1,0 +1,33 @@
+{
+  "taxpayer": {
+    "firstName": "Alice",
+    "lastName": "Walker",
+    "ssn": "123456789",
+    "presidentialCampaign": true,
+    "address": {
+      "street": "123 Elm Street",
+      "cityStateZip": "Springfield, IL 62704"
+    }
+  },
+  "spouse": {
+    "firstName": "Bob",
+    "lastName": "Walker",
+    "ssn": "987654321",
+    "presidentialCampaign": false
+  },
+  "filingStatus": "Single",
+  "digitalAssets": true,
+  "dependents": [
+    {
+      "firstName": "Charlie",
+      "lastName": "Walker",
+      "ssn": "111223333",
+      "relationship": "Son"
+    }
+  ],
+  "income": {
+    "w2": 42000.50,
+    "interest": 120.75,
+    "socialSecurity": 8600.00
+  }
+}

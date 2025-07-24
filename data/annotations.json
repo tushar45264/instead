@@ -1,0 +1,134 @@
+[
+  {
+    "id": "first_name",
+    "label": "First Name",
+    "page": 1,
+    "type": "text",
+    "position": { "x": 72, "y": 140, "width": 110, "height": 12 },
+    "dataPath": "taxpayer.firstName",
+    "format": "uppercase"
+  },
+  {
+    "id": "last_name",
+    "label": "Last Name",
+    "page": 1,
+    "type": "text",
+    "position": { "x": 185, "y": 140, "width": 110, "height": 12 },
+    "dataPath": "taxpayer.lastName",
+    "format": "uppercase"
+  },
+  {
+    "id": "ssn",
+    "label": "Social Security Number",
+    "page": 1,
+    "type": "ssn",
+    "position": { "x": 445, "y": 140, "width": 100, "height": 12 },
+    "dataPath": "taxpayer.ssn",
+    "format": "ssn"
+  },
+  {
+    "id": "spouse_first_name",
+    "page": 1,
+    "type": "text",
+    "position": { "x": 72, "y": 160, "width": 110, "height": 12 },
+    "dataPath": "spouse.firstName",
+    "format": "uppercase"
+  },
+  {
+    "id": "spouse_last_name",
+    "page": 1,
+    "type": "text",
+    "position": { "x": 185, "y": 160, "width": 110, "height": 12 },
+    "dataPath": "spouse.lastName",
+    "format": "uppercase"
+  },
+  {
+    "id": "spouse_ssn",
+    "page": 1,
+    "type": "ssn",
+    "position": { "x": 445, "y": 160, "width": 100, "height": 12 },
+    "dataPath": "spouse.ssn",
+    "format": "ssn"
+  },
+  {
+    "id": "home_address",
+    "page": 1,
+    "type": "text",
+    "position": { "x": 72, "y": 180, "width": 350, "height": 12 },
+    "dataPath": "taxpayer.address.street"
+  },
+  {
+    "id": "city_state_zip",
+    "page": 1,
+    "type": "text",
+    "position": { "x": 72, "y": 200, "width": 350, "height": 12 },
+    "dataPath": "taxpayer.address.cityStateZip"
+  },
+  {
+    "id": "presidential_campaign_you",
+    "page": 1,
+    "type": "checkbox",
+    "position": { "x": 485, "y": 215, "width": 10, "height": 10 },
+    "dataPath": "taxpayer.presidentialCampaign"
+  },
+  {
+    "id": "presidential_campaign_spouse",
+    "page": 1,
+    "type": "checkbox",
+    "position": { "x": 540, "y": 215, "width": 10, "height": 10 },
+    "dataPath": "spouse.presidentialCampaign"
+  },
+  {
+    "id": "filing_status_single",
+    "page": 1,
+    "type": "checkbox",
+    "position": { "x": 72, "y": 260, "width": 10, "height": 10 },
+    "dataPath": "filingStatus",
+    "invertCheckbox": false
+  },
+  {
+    "id": "digital_assets_yes",
+    "page": 1,
+    "type": "checkbox",
+    "position": { "x": 420, "y": 355, "width": 10, "height": 10 },
+    "dataPath": "digitalAssets"
+  },
+  {
+    "id": "dependents_first_name",
+    "page": 1,
+    "type": "text",
+    "position": { "x": 72, "y": 415, "width": 100, "height": 12 },
+    "dataPath": "dependents[0].firstName"
+  },
+  {
+    "id": "dependents_last_name",
+    "page": 1,
+    "type": "text",
+    "position": { "x": 180, "y": 415, "width": 100, "height": 12 },
+    "dataPath": "dependents[0].lastName"
+  },
+  {
+    "id": "income_w2",
+    "page": 1,
+    "type": "amount",
+    "position": { "x": 510, "y": 497, "width": 90, "height": 12 },
+    "dataPath": "income.w2",
+    "format": "currency"
+  },
+  {
+    "id": "income_interest",
+    "page": 1,
+    "type": "amount",
+    "position": { "x": 510, "y": 585, "width": 90, "height": 12 },
+    "dataPath": "income.interest",
+    "format": "currency"
+  },
+  {
+    "id": "income_social_security",
+    "page": 1,
+    "type": "amount",
+    "position": { "x": 510, "y": 650, "width": 90, "height": 12 },
+    "dataPath": "income.socialSecurity",
+    "format": "currency"
+  }
+]
