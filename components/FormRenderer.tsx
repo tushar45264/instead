@@ -16,7 +16,7 @@ interface FieldAnnotation {
   format?: "currency" | "ssn" | "date" | "uppercase";
 }
 type Props = {
-  schema: any; // You can type it better if needed
+  schema: any; 
 };
 
 const FormRenderer= ({ schema }: Props) => {
@@ -29,7 +29,7 @@ const FormRenderer= ({ schema }: Props) => {
   const goToPage = (page: number) => {
     if (page >= 1 && page <= PAGES.length) setCurrentPage(page);
   };
-  console.log(Array.isArray(schema.schema),schema.schema)
+
   return (
     <div className="space-y-4">
       <div className="flex justify-between items-center">
@@ -59,7 +59,7 @@ const FormRenderer= ({ schema }: Props) => {
             alt={`Form Page ${currentPage}`}
             className="w-20 h-20 m-2"
           />
-        {Array.isArray(schema.schema) ? schema.schema.map((field: FieldAnnotation) => (
+        {Array.isArray(schema) ? schema.map((field: FieldAnnotation) => (
           <FieldOverlay key={field.id} annotation={field} data={Data} />
         )): null}
       </div>
